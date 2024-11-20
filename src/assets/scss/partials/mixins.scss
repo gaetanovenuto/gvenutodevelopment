@@ -1,9 +1,9 @@
 @use 'variables' as *;
 
-@mixin default-color {
-    color: $mainColor;
-}
+@mixin link-style {
+    color: $linkColor;
 
-@mixin default-bg-color {
-    background-color: $mainColor;
+    &:hover {
+        color: white;
+    }
 }

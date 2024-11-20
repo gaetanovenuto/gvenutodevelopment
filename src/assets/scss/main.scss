@@ -1,3 +1,7 @@
+@use 'partials/variables.scss' as *;
+@use 'partials/mixins.scss' as *;
+@use 'partials/utilities.scss' as *;
+
 /* 
     GENERAL
 */
@@ -16,4 +20,8 @@
 */
 main {
   text-align: center;
+}
+
+.link-style {
+    @include link-style;
 }
