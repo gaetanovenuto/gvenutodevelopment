@@ -9,9 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
-        
-    </div>
+    <router-link></router-link>
 </template>
 
 <style lang="scss" scoped>
