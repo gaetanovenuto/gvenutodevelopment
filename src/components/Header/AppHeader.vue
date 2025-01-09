@@ -10,7 +10,7 @@ export default {
         { name: "I miei progetti", href: "/projects" },
       ],
     };
-  }
+  },
 };
 </script>
 
@@ -67,12 +67,12 @@ export default {
       <div class="offcanvas-body">
         <!-- Links posizionati all'inizio -->
         <ul class="navbar-nav flex-grow-1">
-          <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item">
+          <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item" data-bs-dismiss="offcanvas">
             <router-link :to="link.href" class="nav-link">{{ link.name }}</router-link>
           </li>
           <!-- Contact Button -->
           <router-link to="/contacts" class="contact-button my-3">
-            <button class="btn btn-contact">Contattami</button>
+            <button class="btn btn-contact" data-bs-dismiss="offcanvas">Contattami</button>
           </router-link>
         </ul>
       </div>
