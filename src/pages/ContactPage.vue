@@ -12,6 +12,13 @@ export default {
 <template>
     <div class="container text-white">
         <h1>Contattami</h1>
+        <a href="https://www.instagram.com/gaetanovenuto_/">
+            <i class="fa-brands fa-instagram fa-xl text-white"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/gaetanovenuto/">
+            <i class="fa-brands fa-linkedin fa-xl text-white mx-3"></i>
+        </a>
+        <hr>
         <p>
             Nel caso fossi un visitatore che vuole darmi un parere, un amico che vuole salutarmi o un recruiter che vuole contattarmi, sentiti libero di farlo. <br>
             Se invece devi insultarmi perché sei stato rickrollato, non farlo. Accettalo.
@@ -46,6 +53,10 @@ export default {
     button {
         width: 100px;
         margin: 0 auto;
+    }
+
+    .icons-container {
+        width: 300px;
     }
 }
 </style>

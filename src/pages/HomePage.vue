@@ -12,9 +12,9 @@ export default {
 <template>
     <div class="container">
         <h1 class="text-center">
-            Congratulazioni, sei il millesimo visitatore del mio sito web!! Hai vinto un iPhone 25 che ha mio cuggino in garage!
+            Congratulazioni! <br> Sei il milionesimo visitatore del mio sito web! <br> Hai vinto un iPhone 25 che ha mio cuggino in garage!
         </h1>
-        <p class="text-center">
+        <p class="text-center py-3">
             Benvenuto nel mio sito web, qui il codice solitamente funziona, ma se non funziona è per mettere alla prova i nervi del visitatore programmatore che è venuto a ficcanasare per vedere se il mio sito web è più bello del suo <strong>*risata malefica*</strong>. <br>
             Se invece sei il mio insegnante, ti farò uscire pazzo dicendoti che faccio i layout con le tables su html.
         </p>
@@ -35,7 +35,7 @@ export default {
         }
 
         .little-text {
-            font-size: 10px;
+            font-size: 11px;
             margin-top: -10px;
         }
         
