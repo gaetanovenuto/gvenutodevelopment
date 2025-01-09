@@ -1,4 +1,6 @@
 <script>
+import { onMounted, ref } from 'vue';
+
 export default {
   data() {
     return {
@@ -8,9 +10,10 @@ export default {
         { name: "I miei progetti", href: "/projects" },
       ],
     };
-  },
+  }
 };
 </script>
+
 
 <template>
   <header>
@@ -67,6 +70,10 @@ export default {
           <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item">
             <router-link :to="link.href" class="nav-link">{{ link.name }}</router-link>
           </li>
+          <!-- Contact Button -->
+          <router-link to="/contacts" class="contact-button my-3">
+            <button class="btn btn-contact">Contattami</button>
+          </router-link>
         </ul>
       </div>
     </div>

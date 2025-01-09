@@ -1,6 +1,5 @@
 <script>
 import AppHeader from './components/Header/AppHeader.vue';
-import AppFooter from './components/Footer/AppFooter.vue';
 
 export default {
   data() {
@@ -11,7 +10,6 @@ export default {
   },
   components: {
     AppHeader,
-    AppFooter,
   },
   mounted() {
     window.addEventListener("mousemove", this.trackMouseMove);
@@ -34,7 +32,6 @@ export default {
     <main>
       <router-view />
     </main>
-    <AppFooter />
 </template>
 
 <style lang="scss">

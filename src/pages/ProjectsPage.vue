@@ -39,8 +39,6 @@ export default {
                             this.totalPages = parseInt(lastPageMatch[1]);
                         }
                     }
-
-                    console.log(this.gitHubProjects);
                 })
                 .catch(error => {
                     console.error('Errore:', error);
@@ -68,7 +66,7 @@ export default {
             Le repositories del mio GitHub
         </h2>
         <div class="card-container d-flex justify-content-between align-items-center flex-wrap">
-            <div v-for="(project, index) in gitHubProjects" :key="index" class="card rounded my-3 py-2 d-flex flex-column justify-content-between align-items-center flex-wrap">
+            <div v-for="(project, index) in gitHubProjects" :key="index" class="card rounded my-3 py-2 d-flex flex-column justify-content-between align-items-center flex-wrap col-12 col-sm-6 col-md-3 col-lg-2 m-auto">
                 <p class="blue-text fw-bold fs-6 text-center">
                     {{ project.name }}
                 </p>
