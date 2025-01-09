@@ -16,7 +16,7 @@ export default {
         </h1>
         <p class="text-center">
             Benvenuto nel mio sito web, qui il codice solitamente funziona, ma se non funziona è per mettere alla prova i nervi del visitatore programmatore che è venuto a ficcanasare per vedere se il mio sito web è più bello del suo <strong>*risata malefica*</strong>. <br>
-            Se invece sei il mio insegnante, ti farò uscire pazzo dicendoti che faccio i layout con le table su html.
+            Se invece sei il mio insegnante, ti farò uscire pazzo dicendoti che faccio i layout con le tables su html.
         </p>
         <hr>
         <p class="text-center">Scherzi a parte, grazie per essere qui e spero che questo portfolio ti piacerà.</p>
