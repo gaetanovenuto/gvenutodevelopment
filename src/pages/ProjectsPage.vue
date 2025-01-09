@@ -65,7 +65,7 @@ export default {
 <template>
     <div class="container">
         <h2 class="text-center text-white">
-            Le repository del mio GitHub
+            Le repositories del mio GitHub
         </h2>
         <div class="card-container d-flex justify-content-between align-items-center flex-wrap">
             <div v-for="(project, index) in gitHubProjects" :key="index" class="card rounded my-3 py-2 d-flex flex-column justify-content-between align-items-center flex-wrap">
