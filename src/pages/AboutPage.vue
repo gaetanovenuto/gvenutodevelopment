@@ -42,14 +42,14 @@ export default {
                     class="fw-bold"
                     title="Boolean"
                 >
-                    Boolean
-                </a>, dove sono stato catapultato nel mondo dello sviluppo Web e di tutte le sue sfaccettature. Sono un
+                    Boolean</a>, dove sono stato catapultato nel mondo dello sviluppo Web e di tutte le sue sfaccettature. Sono un
                 <span class="bold-italic">Web Developer</span> con predisposizione al <strong>front-end</strong>, ma con
                 conoscenze <strong>back-end</strong>. Le tecnologie che conosco sono
                 <span class="bold-italic">Javascript</span> (con framework <span class="bold-italic">Vue.js</span> ),
                 <span class="bold-italic">PHP</span> (con framework <span class="bold-italic">Laravel</span> ),
                 <span class="bold-italic">MySQL</span>, oltre ad <span class="bold-italic">HTML</span>,
                 <span class="bold-italic">CSS</span> e <span class="bold-italic">SASS</span>.
+                Ah, è comunque cantavo: <a href="https://www.rai.it/dl/RaiTV/programmi/media/ContentItem-01f5d3d4-2371-44f0-a09a-7b4aebee3346-tluc.html?fbclid=IwZXh0bgNhZW0CMTEAAR2oZUbbmRGYN3S3AuywLy0n2XZlLspKgWR73PWZDXDqWSZXli-WXhDEx1s_aem_ARc8oZUvAhKUb-kfc56u4x1TsYrIL2z8zEgIRCa81yCiQv5P74hg84n6YgiO8HvqYafLpQ0HjfRw9JBlPENQRd9A#p=0">Video assolutamente non necessario ma che ci tenevo a mettere</a>.
             </p>
         </section>
     </div>

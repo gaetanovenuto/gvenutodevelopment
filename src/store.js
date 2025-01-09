@@ -15,5 +15,6 @@ export const store = reactive({
             name: "I miei progetti",
             href: "/projects"
         },
-    ]
+    ],
+    gitHubToken: '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',
 });
