@@ -7,7 +7,8 @@ export default {
       navbarLinks: [
         { name: "Home", href: "/" },
         { name: "Chi sono", href: "/about" },
-        { name: "I miei progetti", href: "/projects" },
+        { name: "Progetti", href: "/projects" },
+        { name: "Repositories", href: "/repositories" },
       ],
     };
   },
