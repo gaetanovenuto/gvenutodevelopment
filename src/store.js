@@ -26,9 +26,9 @@ export const store = reactive({
             link: "https://www.linkedin.com/feed/update/urn:li:activity:7273025221534642176/"
         },
         {
-            title: "eduPrime",
+            title: "EduPrime",
             image: "/img/eduPrimeScreenshot.png",
-            description: "eduPrime è una pagina interattiva ispirata dal sito dal medesimo nome, creata interamente con VueJS. Creato in 16 ore, è stato il progetto assegnatomi a metà del corso Full Stack Web Developer di Boolean."
+            description: "EduPrime è una pagina interattiva ispirata dal sito dal medesimo nome, creata interamente con VueJS. Creato in 16 ore, è stato il progetto assegnatomi a metà del corso Full Stack Web Developer di Boolean."
         },
         {
             title: "DCComics",
