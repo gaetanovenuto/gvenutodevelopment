@@ -35,7 +35,12 @@ export default {
                 <transition name="fade" mode="out-in">
                     <div class="card" :key="store.projects[currentIndex].title">
                         <h3>{{ store.projects[currentIndex].title }}</h3>
-                        <p>{{ store.projects[currentIndex].description }}</p>
+                        <p>
+                            {{ store.projects[currentIndex].description }} 
+                            <a v-if="store.projects[currentIndex].link" :href="store.projects[currentIndex].link" class="text-decoration-none fw-bold">
+                                Guestly
+                            </a>
+                        </p>
                         <div class="image-wrapper">
                             <img :src="store.projects[currentIndex].image" :alt="store.projects.title" @click="openModal(store.projects[currentIndex].image)" />
                         </div>
