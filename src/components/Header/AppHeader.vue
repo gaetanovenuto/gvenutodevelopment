@@ -6,25 +6,28 @@ export default {
     return {
       navbarLinks: [
         { name: "Home", href: "/" },
-        { name: "Chi sono", href: "/about" },
-        { name: "Progetti", href: "/projects" },
-        { name: "Repositories", href: "/repositories" },
+        { name: "Chi sono", href: "#about" },
+        { name: "Skills", href: "#skills" },
+        { name: "Progetti", href: "#projects" },
       ],
+      animateLinks: ref(false),
     };
   },
+  mounted() {
+    this.animateLinks = true;
+  }
 };
 </script>
 
-
 <template>
   <header>
-    <div class="container">
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid d-flex justify-content-between align-items-center">
           <!-- Logo -->
-          <router-link to="/" class="navbar-brand">
-            <img src="/img/GVDevelopment Logo zoom.png" alt="Logo" height="75" class="logo-img" />
-          </router-link>
+          <div class="open-to-work">
+              <span class="green-point"></span> 
+              Open to work
+          </div>
           <!-- Hamburger Menu -->
           <button
             class="navbar-toggler d-lg-none border-white p-2"
@@ -34,158 +37,171 @@ export default {
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            <img src="/icons/hamburgerMenu.svg" width="28" alt="Menu">
+            <i class="fa-solid fa-bars fa-xl border-none"></i>
           </button>
           <!-- Links Navbar -->
           <div class="collapse navbar-collapse d-none d-lg-flex justify-content-center">
-            <ul class="navbar-nav nav-links">
-              <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item">
-                <router-link :to="link.href" class="nav-link single-nav-link">{{ link.name }}</router-link>
-              </li>
-            </ul>
-          </div>
-          <!-- Contact Button -->
-          <router-link to="/contacts" class="contact-button d-none d-lg-flex">
-            <button class="btn btn-contact">Contattami</button>
-          </router-link>
+                <ul class="navbar-nav nav-links">
+                    <li 
+                        v-for="(link, index) in navbarLinks" 
+                        :key="index" 
+                        class="nav-item fade-in"
+                        :style="{ animationDelay: index * 0.2 + 's' }"
+                    >
+                        <a :to="link.href" class="nav-link single-nav-link">
+                          {{ link.name }}
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- Contact Button -->
+            <a to="/contacts" class="contact-button d-none d-lg-flex">
+                <button class="btn btn-contact bg-primary py-3 px-4 border-0 me-4">
+                    <span class="tooltip-text">Contattami!</span>
+                    <i class="fa-regular fa-comment fa-lg text-white"></i>
+                </button>
+            </a>
         </div>
       </nav>
       <!-- Offcanvas -->
-      <div
-      class="offcanvas offcanvas-end"
-      tabindex="-1"
-      id="offcanvasNavbar"
-      aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-        <button
-          type="button"
-          class="btn-close"
-          data-bs-dismiss="offcanvas"
-          aria-label="Close"
-        ></button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">GVDEVELOPMENT</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <!-- Links posizionati all'inizio -->
+          <ul class="navbar-nav flex-grow-1" :class="{ 'fade-in': animateLinks }">
+            <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item" data-bs-dismiss="offcanvas">
+              <router-link :to="link.href" class="nav-link">{{ link.name }}</router-link>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="offcanvas-body">
-        <!-- Links posizionati all'inizio -->
-        <ul class="navbar-nav flex-grow-1">
-          <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item" data-bs-dismiss="offcanvas">
-            <router-link :to="link.href" class="nav-link">{{ link.name }}</router-link>
-          </li>
-          <!-- Contact Button -->
-          <router-link to="/contacts" class="contact-button my-3">
-            <button class="btn btn-contact" data-bs-dismiss="offcanvas">Contattami</button>
-          </router-link>
-        </ul>
-      </div>
-    </div>
-
-    </div>
   </header>
 </template>
-
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/variables' as *;
 
 header {
+  .open-to-work {
+    color: #111111;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .8px;
 
-    a {
-        text-decoration: none;
+    .green-point {
+      width: 10px;
+      height: 10px;
+      background-color: green;
+      border-radius: 50%;
+      display: inline-block;
+      margin: 0 5px;
+      animation: pulse 1.5s infinite ease-in-out;
     }
 
-    .logo-img {
-        opacity: 0.8;
-        transition: opacity 0.3s;
-        &:hover {
-            opacity: 1;
-        }
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.5); opacity: 0.6; }
+      100% { transform: scale(1); opacity: 1; }
     }
-    .nav-links {
-        .single-nav-link {
-            text-decoration: none;
-            color: rgba(253, 253, 253, 0.7);
-            &:hover {
-            color: white;
-            }
-        }
-    }
-    .btn-contact {
-        border: 2px solid rgba(253, 253, 253, 0.7);
-        color: rgba(253, 253, 253, 0.7);
-        text-decoration:none;
-
-        &:hover {
-        background: white;
-        color: black;
-        }
-        
-    }
-
-    .offcanvas {
-  background: linear-gradient(to right, #000000 70%, #001f3f 80%, #003f7f 90%, #01305f 100%);
-  background-size: 200% 100%;
-  animation: offcanvasGradientAnimation 10s ease infinite;
-  color: #ffffff;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes offcanvasGradientAnimation {
-  0% {
-    background-position: 0% 50%;
   }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 
-.offcanvas-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.offcanvas-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.btn-close {
-  color: #ffffff;
-  filter: brightness(0.8);
-}
-
-.btn-close:hover {
-  filter: brightness(1);
-}
-
-.offcanvas-body {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.nav-link {
-  color: #ffffff;
-  font-size: 1.2rem;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.nav-link:hover {
-  color: #00bfff;
-  text-shadow: 0 0 10px #00bfff;
-}
-
-@media (max-width: 768px) {
-  .offcanvas {
-    padding: 1.5rem;
-  }
   .nav-link {
-    font-size: 1rem;
+    color: #111111;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: .8px;
+    margin: 0 5px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease-out;
+  }
+
+  .nav-link:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Effetto fade-in progressivo */
+  .fade-in {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Animazione in entrata per il pulsante dei contatti */
+  .fade-in-btn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInBtn 1s ease-out 0.8s forwards;
+  }
+
+  @keyframes fadeInBtn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Effetto hover sul pulsante dei contatti */
+  .btn-contact {
+    position: relative;
+    transition: transform 0.3s ease-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.1);
+      background-color: darken(#0d6efd, 10%);
+      
+      .tooltip-text {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+
+  /* Tooltip (fumetto) */
+  .tooltip-text {
+    position: absolute;
+    bottom: 25%;
+    right: 125%;
+    background-color: #007a10;
+    color: #fff;
+    font-size: 14px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    
+    &::after {
+      content: "";
+      position: absolute;
+      top: 40%;
+      left: 99%;
+      transform: translateX(-50%);
+      transform: rotate(270deg);
+      border-width: 6px;
+      border-style: solid;
+      border-color: #007a10 transparent transparent transparent;
+    }
   }
 }
 
-}
+
 </style>

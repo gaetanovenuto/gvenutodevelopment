@@ -38,14 +38,14 @@ export default {
 @import "bootstrap/scss/bootstrap";
 
 body {
-  background: linear-gradient(to right, #000000 70%, #001f3f 80%, #003f7f 90%, #01305f 100%);
   background-size: 200% 100%;
   animation: gradientAnimation 14s ease infinite;
+  font-family: "Mona Sans", serif;
 
   .cursorTracker {
     width: 15px;
     height: 15px;
-    background-color: rgba(253, 253, 253, 0.5);
+    background-color: rgba(14, 12, 12, 0.5);
     border-radius: 50%;
     position: fixed;
     pointer-events: none;
@@ -53,18 +53,5 @@ body {
     transition: transform 0.1s ease;
   }
 }
-
-@keyframes gradientAnimation {
-  0% {
-    background-position: 50% 0%;
-  }
-  50% {
-    background-position: 100% 0%;
-  }
-  100% {
-    background-position: 50% 0%;
-  }
-}
-
 
 </style>
