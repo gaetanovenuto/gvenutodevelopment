@@ -16,8 +16,6 @@ export const store = reactive({
             href: "/projects"
         },
     ],
-    gitHubToken: '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',
-    // Per malintenzionati, non avendo back-end è l'unico modo per mostrare le repo in pagina, ma l'ho impostato che si possono solo vedere le repo con questo token, quindi vi risparmio tempo se volete combinare danno.
     projects: [
         {
             title: "Guestly",
@@ -55,5 +53,67 @@ export const store = reactive({
             image: "/img/discordScreenshot.png",
             description: "Discord è una pagina completamente statica, ispirata ad una versione precedente del sito ufficiale, creata in circa 7 ore agli inizi del corso."
         }
+    ],
+    skills: [
+        {
+            image: './public/img/languages/html.png',
+            name: 'HTML',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/css.svg',
+            name: 'CSS',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/sass.svg',
+            name: 'SCSS',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/js.png',
+            name: 'Javascript',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/vue.png',
+            name: 'Vue3',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/react.png',
+            name: 'React',
+            experience: '2 mesi'
+        },
+        {
+            image: './public/img/languages/php.png',
+            name: 'PHP',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/laravel.png',
+            name: 'Laravel',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/mysql.svg',
+            name: 'MySQL',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/bootstrap.svg',
+            name: 'Bootstrap',
+            experience: '1 anno'
+        },
+        {
+            image: './public/img/languages/office.png',
+            name: 'Office',
+            experience: '9 anni'
+        },
+        {
+            image: './public/img/languages/vite.svg',
+            name: 'Vite',
+            experience: '1 anno'
+        },
     ]
 })

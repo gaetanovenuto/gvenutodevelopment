@@ -22,12 +22,6 @@ export default {
 
   
 <style lang="scss" scoped>
-    .container {
-        padding-top: 100px; /* Compensazione per l'header fisso */
-
-        .white{
-            color: rgba(253, 253, 253, 0.8);
-        }
-    }
+    
 </style>
 

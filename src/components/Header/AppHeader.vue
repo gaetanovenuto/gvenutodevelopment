@@ -6,7 +6,7 @@ export default {
     return {
       navbarLinks: [
         { name: "Home", href: "/" },
-        { name: "Chi sono", href: "#about" },
+        { name: "Chi sono", href: "#about-me" },
         { name: "Skills", href: "#skills" },
         { name: "Progetti", href: "#projects" },
       ],
@@ -48,7 +48,7 @@ export default {
                         class="nav-item fade-in"
                         :style="{ animationDelay: index * 0.2 + 's' }"
                     >
-                        <a :to="link.href" class="nav-link single-nav-link">
+                        <a :href="link.href" class="nav-link single-nav-link">
                           {{ link.name }}
                         </a>
                     </li>
@@ -56,7 +56,7 @@ export default {
 
             </div>
             <!-- Contact Button -->
-            <a to="/contacts" class="contact-button d-none d-lg-flex">
+            <a href="#contact" class="contact-button d-none d-lg-flex">
                 <button class="btn btn-contact bg-primary py-3 px-4 border-0 me-4">
                     <span class="tooltip-text">Contattami!</span>
                     <i class="fa-regular fa-comment fa-lg text-white"></i>
@@ -74,7 +74,7 @@ export default {
           <!-- Links posizionati all'inizio -->
           <ul class="navbar-nav flex-grow-1" :class="{ 'fade-in': animateLinks }">
             <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item" data-bs-dismiss="offcanvas">
-              <router-link :to="link.href" class="nav-link">{{ link.name }}</router-link>
+              <a :href="link.href" class="nav-link">{{ link.name }}</a>
             </li>
           </ul>
         </div>
