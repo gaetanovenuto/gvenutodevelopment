@@ -56,62 +56,62 @@ export const store = reactive({
     ],
     skills: [
         {
-            image: './public/img/languages/html.png',
+            image: 'img/languages/html.png',
             name: 'HTML',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/css.svg',
+            image: 'img/languages/css.svg',
             name: 'CSS',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/sass.svg',
+            image: 'img/languages/sass.svg',
             name: 'SCSS',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/js.png',
+            image: 'img/languages/js.png',
             name: 'Javascript',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/vue.png',
+            image: 'img/languages/vue.png',
             name: 'Vue3',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/react.png',
+            image: 'img/languages/react.png',
             name: 'React',
             experience: '2 mesi'
         },
         {
-            image: './public/img/languages/php.png',
+            image: 'img/languages/php.png',
             name: 'PHP',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/laravel.png',
+            image: 'img/languages/laravel.png',
             name: 'Laravel',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/mysql.svg',
+            image: 'img/languages/mysql.svg',
             name: 'MySQL',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/bootstrap.svg',
+            image: 'img/languages/bootstrap.svg',
             name: 'Bootstrap',
             experience: '1 anno'
         },
         {
-            image: './public/img/languages/office.png',
+            image: 'img/languages/office.png',
             name: 'Office',
             experience: '9 anni'
         },
         {
-            image: './public/img/languages/vite.svg',
+            image: 'img/languages/vite.svg',
             name: 'Vite',
             experience: '1 anno'
         },
