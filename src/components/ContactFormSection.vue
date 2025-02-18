@@ -24,7 +24,7 @@ export default {
 </script>
 
 <template>
-    <div class="contact my-5" id="contact">
+    <div class="contact py-5" id="contact">
         <div class="container">
             <h4 class="text-center my-5 fw-light">
                 CONTATTAMI

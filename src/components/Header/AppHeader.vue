@@ -42,7 +42,7 @@ export default {
 
 <template>
   <header>
-      <nav class="navbar navbar-expand-lg">
+      <nav class="navbar navbar-expand-lg" id="navbar">
         <div class="container-fluid d-flex justify-content-between align-items-center">
           <!-- Logo -->
           <div class="open-to-work">

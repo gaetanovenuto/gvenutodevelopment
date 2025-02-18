@@ -90,6 +90,10 @@ export default {
                 </div>
             </div>
         </div>
+        <a href="#navbar" class="text-decoration-none text-black up-button">
+            <i class="fa-solid fa-arrow-up fa-lg rounded bg-body-secondary py-3 px-2"></i>
+        </a>
+        
     </div>
 </template>
 
@@ -147,6 +151,23 @@ export default {
 
     .card {
         border-radius: 20px !important;
+    }
+
+    .up-button {
+        
+        &:hover {
+            color: rgb(19, 5, 221) !important;
+        }
+
+        .fa-arrow-up {
+            border-radius: 50% !important;
+            padding: 34px 25px !important;
+            position: fixed;
+            z-index: 999;
+            margin-left: 95%;
+            margin-top: 18%;
+            
+        }
     }
 }
 </style>

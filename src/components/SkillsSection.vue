@@ -24,8 +24,8 @@ export default {
 </script>
 
 <template>
-    <div class="skills container" id="skills">
-        <h4 class="text-center mb-5 fw-light">
+    <div class="skills container my-4" id="skills">
+        <h4 class="text-center fw-light">
             SKILLS
         </h4>
         <div class="d-flex flex-wrap justify-content-between">
