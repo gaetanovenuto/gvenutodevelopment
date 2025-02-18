@@ -39,7 +39,7 @@ export default {
     <LanguagesSection />
     <CertificationsSection />
     <ProjectsSection />
-    <SkillsContainer />
+    <SkillsSection />
     <AboutMeSection />
     <ContactFormSection />
     
