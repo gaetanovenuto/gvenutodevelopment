@@ -15,6 +15,27 @@ export default {
   },
   mounted() {
     this.animateLinks = true;
+  },
+  methods: {
+    closeOffcanvasAndNavigate(href) {
+        // Prima chiudo l'offcanvas
+        const offcanvasElement = document.getElementById('offcanvasNavbar');
+        const offcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+        offcanvas.hide();
+        
+        // Aspettiamo che l'animazione di chiusura sia completa
+        offcanvasElement.addEventListener('hidden.bs.offcanvas', () => {
+            // Poi navighiamo alla sezione
+            if (href.startsWith('#')) {
+                const element = document.querySelector(href);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            } else {
+                window.location.href = href;
+            }
+        }, { once: true });
+    }
   }
 };
 </script>
@@ -73,8 +94,15 @@ export default {
         <div class="offcanvas-body">
           <!-- Links posizionati all'inizio -->
           <ul class="navbar-nav flex-grow-1" :class="{ 'fade-in': animateLinks }">
-            <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item" data-bs-dismiss="offcanvas">
-              <a :href="link.href" class="nav-link">{{ link.name }}</a>
+            <li v-for="(link, index) in navbarLinks" :key="index" class="nav-item">
+              <a 
+                :href="link.href" 
+                class="nav-link" 
+                data-bs-dismiss="offcanvas"
+                @click.prevent="closeOffcanvasAndNavigate(link.href)"
+              >
+                {{ link.name }}
+              </a>
             </li>
           </ul>
         </div>

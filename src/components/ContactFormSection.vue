@@ -31,13 +31,13 @@ export default {
             </h4>
             <form id="contactForm" action="https://formspree.io/f/xjkkjbey" method="POST" class="d-flex flex-column">
                 <label for="name">Nome:</label>
-                <input type="text" id="name" name="name" required class="w-100 my-2 rounded p-1" placeholder="Inserisci il tuo nome">
+                <input type="text" id="name" name="name" required class="w-100 my-2 rounded p-2" placeholder="Inserisci il tuo nome">
                 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required class="w-100 my-2 rounded p-1" placeholder="Inserisci la tua mail">
+                <input type="email" id="email" name="email" required class="w-100 my-2 rounded p-2" placeholder="Inserisci la tua mail">
                 
                 <label for="message">Messaggio:</label>
-                <textarea id="message" name="message" required class="my-2 rounded" rows="5" cols="25" placeholder="Inserisci il tuo messaggio"></textarea>
+                <textarea id="message" name="message" required class="my-2 rounded p-2" rows="5" cols="25" placeholder="Inserisci il tuo messaggio"></textarea>
                 
                 <button type="submit" class="text-decoration-none fw-bold bg-primary text-white bordered p-1 rounded w-25">Invia</button>
             </form>
