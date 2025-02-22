@@ -18,6 +18,12 @@ export const store = reactive({
     ],
     projects: [
         {
+            title: "Matteo Basile Photography",
+            image: "/img/matteoScreenshot.png",
+            description: "Matteo Basile Photography è un sito web portfolio online creato per un fotografo. Il sito è stato creato con VueJS e Vite, ed è stato il mio secondo sito web che ho pubblicato online. Per approfondire, visita questo link:",
+            link: "https://www.matteobasile.it"
+        },
+        {
             title: "Guestly",
             image: "/img/guestlyScreenshot.png",
             description: "Guestly è un sito web ispirato ad AirBnB ed Idealista, progettato ed ideato in circa due settimane insieme a due colleghi di corso, valso come progetto finale del corso Full Stack Web Developer di Boolean. In questa web app si possono ricercare appartamenti in una zona desiderata, creare appartamenti, mettersi in contatto con il proprietario e vedere le statistiche dei propri appartamenti. Per approfondire, visita questo link:",
