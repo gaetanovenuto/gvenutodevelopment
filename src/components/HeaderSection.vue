@@ -85,8 +85,8 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6 profile-pic-container">
-                    <img src="/public/img/gaetano.png" alt="Monviso" class="card img-fluid" title="Gaetano Venuto">
+                <div class="col-12 col-lg-6 profile-pic-container d-flex justify-content-center">
+                    <img src="/public/img/gaetano.png" alt="Gaetano Venuto" class="card img-fluid" title="Gaetano Venuto">
                 </div>
             </div>
         </div>
