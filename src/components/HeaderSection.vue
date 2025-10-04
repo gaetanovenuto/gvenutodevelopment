@@ -68,7 +68,7 @@ export default {
                 <div class="col-12 col-lg-6 my-5">
                     <div class="header-presentation">
                         <img src="/public/img/favicon.png" class="me-2" width="18" height="18" alt="Hand-wave">
-                        Ciao, il mio nome è Gaetano, ho <span class="age text-decoration-underline" title="Con una piccola funzione di Javascript questo numero cambierà automaticamente il 2 Ottobre, giorno del mio compleanno!">{{ currentAge }}</span> anni e sono un
+                        Ciao, il mio nome è Gaetano, ho <span class="age text-decoration-underline" title="Con una piccola funzione Javascript questo numero cambierà automaticamente il 2 Ottobre, giorno del mio compleanno!">{{ currentAge }}</span> anni e sono un
                     </div>
                     <div class="fs-1 fw-bold">
                         Full-stack Web Developer
@@ -85,8 +85,8 @@ export default {
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-lg-6">
-                    <img src="/public/img/monviso.jpg" alt="Monviso" class="card img-fluid" title="Nonostante io sia nato in Sicilia, amo il paesaggio alpino.">
+                <div class="col-12 col-lg-6 profile-pic-container">
+                    <img src="/public/img/gaetano.png" alt="Monviso" class="card img-fluid" title="Gaetano Venuto">
                 </div>
             </div>
         </div>
@@ -130,6 +130,12 @@ export default {
     .container {
         position: relative;
         z-index: 1; /* Assicura che il contenuto sia sopra la griglia */
+
+        .profile-pic-container {
+            img {
+                width: 450px;
+            }
+        }
     }
 
     .header-presentation {

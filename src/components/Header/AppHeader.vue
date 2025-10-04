@@ -6,9 +6,10 @@ export default {
     return {
       navbarLinks: [
         { name: "Home", href: "/" },
-        { name: "Chi sono", href: "#about-me" },
-        { name: "Skills", href: "#skills" },
-        { name: "Progetti", href: "#projects" },
+        { name: "About me", href: "#about-me" },
+        { name: "Il mio percorso", href: "#timeline" },
+        // { name: "Skills", href: "#skills" },
+        // { name: "Progetti", href: "#projects" },
       ],
       animateLinks: ref(false),
     };

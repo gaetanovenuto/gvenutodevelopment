@@ -9,16 +9,22 @@ export default {
                 '/img/languages/css.svg',
                 '/img/languages/sass.svg',
                 '/img/languages/js.png',
+                '/img/languages/jquery.svg',
                 '/img/languages/vue.png',
+                '/img/languages/react.png',
                 '/img/languages/bootstrap.svg',
+                '/img/languages/tailwindcss.svg',
                 '/img/languages/php.png',
                 '/img/languages/laravel.png',
                 '/img/languages/mysql.svg',
-                '/img/languages/vite.svg',
-                '/img/languages/react.png',
+                '/img/languages/mariadb.svg',
+                '/img/languages/postgresql.svg',
+                '/img/languages/docker.svg',
+                '/img/languages/git.svg',
                 '/img/languages/office.png',
+                '/img/languages/linux.svg',
             ],
-            animationSpeed: 20, // secondi per completare un intero ciclo
+            animationSpeed: 30, // secondi per completare un intero ciclo
         }
     },
     computed: {

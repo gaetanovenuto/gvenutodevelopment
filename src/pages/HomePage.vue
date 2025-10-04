@@ -3,8 +3,8 @@
 import HeaderSection from '../components/HeaderSection.vue';
 import LanguagesSection from '../components/LanguagesSection.vue';
 import CertificationsSection from '../components/CertificationsSection.vue';
-import ProjectsSection from '../components/ProjectsSection.vue';
-import SkillsSection from '../components/SkillsSection.vue';
+// import ProjectsSection from '../components/ProjectsSection.vue';
+// import SkillsSection from '../components/SkillsSection.vue';
 import AboutMeSection from '../components/AboutMeSection.vue';
 import ContactFormSection from '../components/ContactFormSection.vue';
 
@@ -14,8 +14,8 @@ export default {
         HeaderSection,
         LanguagesSection,
         CertificationsSection,
-        ProjectsSection,
-        SkillsSection,
+        // ProjectsSection,
+        // SkillsSection,
         AboutMeSection,
         ContactFormSection
     },
@@ -38,8 +38,8 @@ export default {
     <HeaderSection />
     <LanguagesSection />
     <CertificationsSection />
-    <ProjectsSection />
-    <SkillsSection />
+    <!-- <ProjectsSection /> -->
+    <!-- <SkillsSection /> -->
     <AboutMeSection />
     <ContactFormSection />
     
