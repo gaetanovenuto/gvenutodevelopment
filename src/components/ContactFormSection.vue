@@ -26,7 +26,7 @@ export default {
 <template>
     <div class="contact py-5" id="contact">
         <div class="container">
-            <h4 class="text-center my-5 fw-light">
+            <h4 class="text-center my-5 ">
                 CONTATTAMI
             </h4>
             <form id="contactForm" action="https://formspree.io/f/xjkkjbey" method="POST" class="d-flex flex-column">

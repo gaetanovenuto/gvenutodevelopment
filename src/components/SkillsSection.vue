@@ -25,7 +25,7 @@ export default {
 
 <template>
     <div class="skills container my-4" id="skills">
-        <h4 class="text-center fw-light">
+        <h4 class="text-center fw-bold">
             SKILLS
         </h4>
         <div class="d-flex flex-wrap justify-content-between">
@@ -33,7 +33,7 @@ export default {
                 <img class="col-6 p-3" :src="skill.image" :alt="skill.name">
                 <div class="col-6 h-100 info d-flex flex-column justify-content-evenly">
                     <h5 class="mt-2">{{ skill.name }}</h5>
-                    <p class="fw-light">Esperienza: {{ skill.experience }}</p>
+                    <p class="fw-bold">Esperienza: {{ skill.experience }}</p>
                 </div>
             </div>
         </div>

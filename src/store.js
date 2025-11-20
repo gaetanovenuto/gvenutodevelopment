@@ -18,6 +18,11 @@ export const store = reactive({
     ],
     projects: [
         {
+            title: "RRoom",
+            image: "/img/RRoom.jpeg",
+            description: "Reservations Room è una web app di prenotazione stanze, completamente tradotta manualmente in più lingue, con possibilità di registrazione/accesso, gestione lato admin/moderatore, possibilità di importazione/esportazione dati, check-in/check-out tramite codice a barre, creazione evento inquadrando il codice QR, gestione template email e molto altro!",
+        },
+        {
             title: "Matteo Basile Photography",
             image: "/img/matteoScreenshot.png",
             description: "Matteo Basile Photography è un sito web portfolio online creato per un fotografo. Il sito è stato creato con VueJS e Vite, ed è stato il mio secondo sito web che ho pubblicato online. Per approfondire, visita questo link:",

@@ -9,7 +9,7 @@ export default {
         { name: "About me", href: "#about-me" },
         { name: "Il mio percorso", href: "#timeline" },
         // { name: "Skills", href: "#skills" },
-        // { name: "Progetti", href: "#projects" },
+        { name: "Progetti", href: "#projects" },
       ],
       animateLinks: ref(false),
     };

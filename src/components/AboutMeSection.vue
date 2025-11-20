@@ -25,7 +25,7 @@ export default {
 
 <template>
     <div class="about-me py-2" id="about-me">
-        <h4 class="text-center my-5 fw-light">
+        <h4 class="text-center my-5 fw-bold">
             ABOUT ME
         </h4>
         <div class="container">
@@ -78,7 +78,7 @@ export default {
         </div>
     </div>
     <div class="timeline py-2" id="timeline">
-        <h4 class="text-center my-5 fw-light">
+        <h4 class="text-center my-5 fw-bold">
             IL MIO PERCORSO
         </h4>
         <div class="container">

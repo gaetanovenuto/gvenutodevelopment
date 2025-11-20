@@ -58,7 +58,7 @@ export default {
 <template>
     <div class="projects" id="projects">
         <div class="container pt-4">
-            <h4 class="text-center mb-5 fw-light">
+            <h4 class="text-center mb-5 fw-bold">
                 PROGETTI
             </h4>
             <div class="row">
@@ -184,25 +184,27 @@ export default {
 }
 
 .image-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    .modal-content {
-        position: relative;
-        max-width: 90vw;
-        max-height: 90vh;
-        background-color: #fff;
-        border-radius: 12px;
-        padding: 30px;
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* niente centering verticale */
+  overflow: auto; /* permette lo scroll se necessario */
+  padding: 40px 0; /* margine estetico top/bottom */
+
+  .modal-content {
+    position: relative;
+    max-width: 90vw;
+    width: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    max-height: none;
         
         .close-button {
             position: absolute;
@@ -227,17 +229,15 @@ export default {
                 transform: scale(1.1);
             }
         }
-        
-        .modal-image-container {
-            overflow: auto;
-            max-height: calc(90vh - 60px);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
+
+    .modal-image-container {
+      max-height: calc(100vh - 120px); /* altezza massima visibile */
+      overflow-y: auto; /* abilita scroll interno */
+
             .modal-image {
-                max-width: 100%;
-                object-fit: contain;
+              max-width: 100%;
+              height: auto;
+              display: block;
             }
         }
     }

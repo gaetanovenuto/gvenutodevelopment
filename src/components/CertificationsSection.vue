@@ -26,7 +26,7 @@ export default {
 <template>
     <div class="certifications" id="certifications">
         <div class="container py-4">
-            <h4 class="text-center mt-2 fw-light">
+            <h4 class="text-center mt-2 fw-bold">
                 CERTIFICAZIONI
             </h4>
             <div class="row justify-content-center pb-4">
